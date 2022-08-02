@@ -29,7 +29,6 @@ class _WeatherAppState extends State<WeatherApp> {
   _onPageChanged(int index) {
     setState(() {
       _currentPage = index;
-      _currentPage = index;
     });
   }
 
