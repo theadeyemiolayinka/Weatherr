@@ -7,7 +7,6 @@ class NetworkHandler {
   final String Url;
 
   Future getData() async {
-    print(Url);
     var uri = Uri.parse(Url);
     http.Response response = await http.get(uri);
     if (response.statusCode == 200) {

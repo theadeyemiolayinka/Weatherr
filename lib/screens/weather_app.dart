@@ -201,7 +201,7 @@ class _WeatherAppState extends State<WeatherApp> {
             TransformerPageView(
               scrollDirection: Axis.horizontal,
               transformer: ScaleAndFadeTransformer(),
-              viewportFraction: 0.8,
+              viewportFraction: 0.95,
               onPageChanged: _onPageChanged,
               itemCount: 4,
               itemBuilder: (ctx, i) =>
