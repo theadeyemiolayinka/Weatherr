@@ -105,7 +105,7 @@ class _WeatherAppState extends State<WeatherApp> {
           temparature:
               weatherData['current']['temp'].toInt().toString() + "\u2103",
           weatherType: weatherData['current']['weather'][0]['main'],
-          iconUrl: "http://openweathermap.org/img/w/" +
+          iconUrl: "https://openweathermap.org/img/w/" +
               weatherData['current']['weather'][0]['icon'] +
               ".png",
           img: bgImg1,
@@ -121,7 +121,7 @@ class _WeatherAppState extends State<WeatherApp> {
               weatherData['daily'][1]['temp']['day'].toInt().toString() +
                   "\u2103",
           weatherType: weatherData['daily'][1]['weather'][0]['main'],
-          iconUrl: "http://openweathermap.org/img/w/" +
+          iconUrl: "https://openweathermap.org/img/w/" +
               weatherData['daily'][1]['weather'][0]['icon'] +
               ".png",
           img: bgImg3,
@@ -137,7 +137,7 @@ class _WeatherAppState extends State<WeatherApp> {
               weatherData['daily'][2]['temp']['day'].toInt().toString() +
                   "\u2103",
           weatherType: weatherData['daily'][2]['weather'][0]['main'],
-          iconUrl: "http://openweathermap.org/img/w/" +
+          iconUrl: "https://openweathermap.org/img/w/" +
               weatherData['daily'][2]['weather'][0]['icon'] +
               ".png",
           img: bgImg4,
@@ -153,7 +153,7 @@ class _WeatherAppState extends State<WeatherApp> {
               weatherData['daily'][3]['temp']['day'].toInt().toString() +
                   "\u2103",
           weatherType: weatherData['daily'][3]['weather'][0]['main'],
-          iconUrl: "http://openweathermap.org/img/w/" +
+          iconUrl: "https://openweathermap.org/img/w/" +
               weatherData['daily'][3]['weather'][0]['icon'] +
               ".png",
           img: bgImg2,
