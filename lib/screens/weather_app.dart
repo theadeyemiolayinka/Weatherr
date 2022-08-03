@@ -124,7 +124,7 @@ class _WeatherAppState extends State<WeatherApp> {
           iconUrl: "https://openweathermap.org/img/w/" +
               weatherData['daily'][1]['weather'][0]['icon'] +
               ".png",
-          img: bgImg3,
+          img: bgImg2,
           wind: weatherData['daily'][1]['wind_speed'].toInt(),
           rain: weatherData['daily'][1]['dew_point'].toInt(),
           humidity: weatherData['daily'][1]['humidity'].toInt()),
@@ -140,7 +140,7 @@ class _WeatherAppState extends State<WeatherApp> {
           iconUrl: "https://openweathermap.org/img/w/" +
               weatherData['daily'][2]['weather'][0]['icon'] +
               ".png",
-          img: bgImg4,
+          img: bgImg3,
           wind: weatherData['daily'][2]['wind_speed'].toInt(),
           rain: weatherData['daily'][2]['dew_point'].toInt(),
           humidity: weatherData['daily'][2]['humidity'].toInt()),
@@ -156,7 +156,7 @@ class _WeatherAppState extends State<WeatherApp> {
           iconUrl: "https://openweathermap.org/img/w/" +
               weatherData['daily'][3]['weather'][0]['icon'] +
               ".png",
-          img: bgImg2,
+          img: bgImg4,
           wind: weatherData['daily'][3]['wind_speed'].toInt(),
           rain: weatherData['daily'][3]['dew_point'].toInt(),
           humidity: weatherData['daily'][3]['humidity'].toInt()),
@@ -200,7 +200,7 @@ class _WeatherAppState extends State<WeatherApp> {
           children: [
             TransformerPageView(
               scrollDirection: Axis.horizontal,
-              transformer: ScaleAndFadeTransformer(),
+              transformer: DeepthPageTransformer(),
               viewportFraction: 0.95,
               onPageChanged: _onPageChanged,
               itemCount: 4,
